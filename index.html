@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Rishik V.">
+<title>AP World History: Comprehensive Connections Map</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div id="disclaimer">
+    <p>AP® is a trademark registered by College Board, which is not affiliated with and does not endorse this site.</p>
+    <p>Unofficial student study aid. Not affiliated with or endorsed by the authors or publisher of the textbook. Summaries may contain errors, so check them against your textbook and teacher.</p>
+  </div>
+  <div class="title-group">
+    <h1>AP World History: Connections Map <small>1750–Present</small></h1>
+    <div class="creator">Created by <span>Rishik V.</span> · Last reviewed <time datetime="2026-10-21">October 21, 2026</time></div>
+    <div class="attribution">Summaries based on Strayer, Ways of the World (AP edition)</div>
+  </div>
+  <div class="era-nav">
+    <button class="era-btn" onclick="goTo(40)">Ch 7–8: Revolutions & Industry</button>
+    <button class="era-btn" onclick="goTo(1240)">Ch 9–10: Imperialism & Responses</button>
+    <button class="era-btn" onclick="goTo(1840)">Ch 11: World Wars & Crisis</button>
+    <button class="era-btn" onclick="goTo(2440)">Ch 12: Cold War & Decolonization</button>
+    <button class="era-btn" onclick="goTo(3040)">Ch 13: Science & Global Economy</button>
+    <button class="era-btn" onclick="goTo(3640)">Ch 14: Anthropocene & Future</button>
+  </div>
+  <div class="top-actions">
+    <button class="btn" id="tg"></button>
+    <button class="btn" id="header-toggle" type="button" aria-expanded="true">Minimize top</button>
+  </div>
+</header>
+
+<div id="stage">
+  <div id="world">
+    <div class="era-banner" style="left:52px;width:1430px;">PERIOD 3: REVOLUTIONS & INDUSTRIAL TRANSFORMATION (1750–1900)</div>
+    <div class="era-banner" style="left:1612px;width:715px;">PERIOD 3: IMPERIAL ENCOUNTERS & GLOBAL CONFLICT</div>
+    <div class="era-banner" style="left:2392px;width:715px;">PERIOD 4: CRISIS & GLOBAL TOTAL WAR (1914–1945)</div>
+    <div class="era-banner" style="left:3172px;width:715px;">PERIOD 4: COLD WAR & DECOLONIZATION (1945–1990s)</div>
+    <div class="era-banner" style="left:3952px;width:715px;">PERIOD 4: ACCELERATING CONNECTIONS (1900–PRESENT)</div>
+    <div class="era-banner" style="left:4732px;width:715px;">PERIOD 4: PLANETARY SCALE & ANTHROPOCENE</div>
+    <svg id="edges"></svg>
+  </div>
+</div>
+
+<div id="legend">
+  <div id="legend-head">Legend <button id="legend-toggle" type="button" aria-expanded="true">Hide</button></div>
+  <div id="legend-items"></div>
+</div>
+<div id="topic-search">
+  <div id="search-results" role="listbox" aria-label="Search results" hidden></div>
+  <input id="topic-search-input" type="search" role="combobox" aria-label="Search topics and historical details"
+    aria-autocomplete="list" aria-controls="search-results" aria-expanded="false"
+    placeholder="Search topics..." autocomplete="off">
+</div>
+<div id="zoom">
+  <button class="btn" id="zo" aria-label="Zoom out">−</button>
+  <button class="btn" id="fit">Fit</button>
+  <button class="btn" id="zi" aria-label="Zoom in">+</button>
+  <button class="btn" id="reset-positions" title="Restore the original box positions">Reset boxes</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
